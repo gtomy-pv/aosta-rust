@@ -29,11 +29,9 @@ pub struct RxRecord {
     #[serde(rename = "Rx Date")]
     pub rx_date: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Hyperlink")]
     pub hyperlink: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "HyperlinkUrl")]
     pub hyperlink_url: String,
 }

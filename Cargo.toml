@@ -3,6 +3,15 @@ name = "medical-record-validator"
 version = "0.1.0"
 edition = "2024"
 
+[profile.dev]
+debug = true
+overflow-checks = true
+panic = "unwind"
+
+[profile.test]
+debug = true
+overflow-checks = true
+
 [dependencies]
 axum = "0.8"
 tokio = { version = "1.46", features = ["full"] }

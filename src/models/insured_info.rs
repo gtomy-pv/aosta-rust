@@ -42,20 +42,17 @@ pub struct InsuredInfo {
     #[serde(rename = "Insured SSN")]
     pub insured_ssn: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Street Address")]
     pub street_address: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "State")]
     pub state: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Zip")]
     pub zip: String,
 
     #[serde(rename = "Most Recent Address Date")]
-    pub most_recent_address_date: String,
+    pub most_recent_address_date: Option<String>,
 
     #[serde(rename = "Medical Records Start Date")]
     pub medical_records_start_date: String,

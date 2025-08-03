@@ -23,7 +23,6 @@ pub struct TestRecord {
     #[serde(rename = "Value Type")]
     pub value_type: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Value")]
     pub value: String,
 
@@ -73,11 +72,9 @@ pub struct TestRecord {
     #[serde(rename = "Clinician Specialty")]
     pub clinician_specialty: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Hyperlink")]
     pub hyperlink: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "HyperlinkUrl")]
     pub hyperlink_url: String,
 }

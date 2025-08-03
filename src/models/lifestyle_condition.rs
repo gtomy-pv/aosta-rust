@@ -67,11 +67,9 @@ pub struct LifestyleCondition {
     #[serde(rename = "Clinician Specialty")]
     pub clinician_specialty: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "Hyperlink")]
     pub hyperlink: String,
 
-    #[validate(length(min = 1))]
     #[serde(rename = "HyperlinkUrl")]
     pub hyperlink_url: String,
 }
