@@ -12,6 +12,6 @@ pub use lab_record::LabRecord;
 pub use lifestyle_condition::LifestyleCondition;
 pub use medical_record::MedicalRecord;
 pub use request::ValidationRequest;
-pub use requirements::RequirementsService;
+pub use requirements::{RequirementRow, RequirementsService};
 pub use rx_record::RxRecord;
 pub use test_record::TestRecord;
