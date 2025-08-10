@@ -8,6 +8,7 @@ pub enum ValidationErrorType {
     SelectOptionInvalid,
     NumericMissingValue,
     BloodPressureFormatInvalid,
+    ClinicalCodeMismatch,
 }
 
 impl fmt::Display for ValidationErrorType {
@@ -22,6 +23,7 @@ impl fmt::Display for ValidationErrorType {
             ValidationErrorType::BloodPressureFormatInvalid => {
                 write!(f, "BLOOD_PRESSURE_FORMAT_INVALID")
             }
+            ValidationErrorType::ClinicalCodeMismatch => write!(f, "CLINICAL_CODE_MISMACTH"),
         }
     }
 }
