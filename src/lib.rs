@@ -11,8 +11,8 @@ mod tests {
 
     #[test]
     fn test_sample_json_parses() {
-        let json_data = fs::read_to_string("sample_data/test_aosta_payload.json")
-            .expect("Could not read the file");
+        let json_data =
+            fs::read_to_string("sample_data/aosta_test.json").expect("Could not read the file");
 
         let request: ValidationRequest =
             serde_json::from_str(&json_data).expect("JSON should parse successfully.");
